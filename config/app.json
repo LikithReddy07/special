@@ -1,0 +1,16 @@
+{
+  "access": {
+    "code": "23111998"
+  },
+  "features": {
+    "tinyMoments": true,
+    "onCallCompanion": true,
+    "letters": true,
+    "timeline": true,
+    "miniGame": true,
+    "voiceNote": true
+  },
+  "relationship": {
+    "startDate": "2026-04-02"
+  }
+}

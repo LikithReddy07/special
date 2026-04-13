@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Special Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="lock-screen" class="screen">
+        <div class="lock-container">
+            <p>This space is made for one person ❤️<br>If this is not you, you'll know.</p>
+            <input type="password" id="access-code" placeholder="Enter your code">
+            <p id="error-message" class="hidden">This wasn't made for you 🌙</p>
+        </div>
+    </div>
+
+    <div id="main-app" class="screen hidden">
+        <header>
+            <h1 id="relationship-counter">It's been X days ❤️</h1>
+        </header>
+        
+        <main id="app-content">
+            <!-- Features will be dynamically rendered here -->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

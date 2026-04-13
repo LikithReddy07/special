@@ -1,0 +1,32 @@
+{
+  "tinyMoments": [
+    "I'm proud of you ❤️",
+    "Drink water please",
+    "You're doing better than you think",
+    "You're my favorite human.",
+    "Sending a virtual hug (it's really tight!)",
+    "I'm so lucky to have you."
+  ],
+  "badDay": [
+    "It's okay to feel tired. I'm here.",
+    "You don't have to be strong all the time.",
+    "Today was hard, but it's over now. Rest."
+  ],
+  "moods": {
+    "exhausted": [
+      "You made it through today. That's enough.",
+      "Just focus on resting. You've done so much.",
+      "Close your eyes for a moment. I'm right here."
+    ],
+    "stressed": [
+      "Breathe. One step at a time.",
+      "You've handled so much before. You can do this too.",
+      "Don't forget to take a break. You deserve it."
+    ],
+    "okay": [
+      "I'm glad today wasn't too hard ❤️",
+      "Happy to hear you're doing alright.",
+      "I hope the rest of your day stays peaceful."
+    ]
+  }
+}

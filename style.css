@@ -1,0 +1,250 @@
+/* Soft Pastel Palette: 
+   lavender: #EBDEF0
+   blush pink: #FADBD8
+   light blue: #D6EAF8
+   soft gray: #F4F6F7
+*/
+
+:root {
+  --lavender: #EBDEF0;
+  --blush-pink: #FADBD8;
+  --light-blue: #D6EAF8;
+  --soft-gray: #F4F6F7;
+  --warm-text: #4A4A4A;
+  --accent-pink: #E91E63;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--soft-gray);
+  color: var(--warm-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.screen {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease-in-out;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+/* Entry Experience */
+#lock-screen {
+  background-color: var(--lavender);
+  text-align: center;
+}
+
+.lock-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  max-width: 90%;
+  width: 400px;
+}
+
+input#access-code {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  border: 2px solid var(--light-blue);
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input#access-code:focus {
+  border-color: var(--blush-pink);
+}
+
+#error-message {
+  color: var(--accent-pink);
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Main App Styles */
+#main-app {
+  background-color: var(--soft-gray);
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+header {
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+#relationship-counter {
+  font-size: 24px;
+  color: var(--warm-text);
+  font-weight: 300;
+}
+
+#app-content {
+  width: 100%;
+  max-width: 600px;
+  display: grid;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+/* Component Styles */
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: var(--warm-text);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 25px;
+  background-color: var(--light-blue);
+  color: var(--warm-text);
+  font-size: 16px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:hover {
+  background-color: var(--lavender);
+}
+
+/* Tiny Moments */
+.tiny-moments-message {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* On-Call Companion */
+.mood-selector {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.mood-btn {
+  padding: 10px;
+  background: var(--soft-gray);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.breathing-circle {
+  width: 100px;
+  height: 100px;
+  background-color: var(--blush-pink);
+  border-radius: 50%;
+  margin: 30px auto;
+  animation: breathe 4s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.4); opacity: 0.5; }
+}
+
+/* Letters */
+.letters-container {
+  display: grid;
+  gap: 15px;
+}
+
+.letter {
+  background: var(--light-blue);
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+/* Timeline */
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  border-left: 2px solid var(--blush-pink);
+}
+
+.timeline-item::before {
+  content: '❤️';
+  position: absolute;
+  left: -11px;
+  top: 0;
+  background: white;
+  font-size: 12px;
+}
+
+.timeline-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.timeline-date {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Mini Game */
+.game-area {
+  height: 200px;
+  background: var(--soft-gray);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.heart {
+  position: absolute;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
